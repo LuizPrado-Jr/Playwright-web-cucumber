@@ -1,0 +1,18 @@
+# Ignorar arquivos de resultados do JMeter
+*.jtl
+*.log
+*.html # Se seus relatórios HTML forem gerados aqui
+test-results/ # Se você tiver uma pasta específica para resultados
+
+# Ignorar arquivos de dados sensíveis (exemplo)
+data/credentials.csv
+*.properties.local # Se você usa arquivos de propriedades locais para credenciais
+.env # Se você usa arquivos .env para variáveis de ambiente
+
+# Ignorar arquivos de cache e temporários
+*.bak
+*.scc
+*.user
+*.orig
+*.swp
+*.tmp
