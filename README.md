@@ -16,42 +16,45 @@ Automação de testes end-to-end para um fluxo de checkout simples em um e-comme
 ├── reports              # Relatórios de execução dos testes
 ```
 
-## Tecnologias Utilizadas
+## Versões Utilizadas
 
-- **Node.js**
-- **Playwright** (`@playwright/test`)
-- **Cucumber** (`@cucumber/cucumber`)
+- Node.js: 22.x
+- @cucumber/cucumber: 9.x ou superior
+- @playwright/test: 1.x ou superior
 
-## Como Executar
+## Dependências
 
-1. **Instale as dependências:**
-   ```bash
-   npm install
-   ```
+- @cucumber/cucumber
+- @playwright/test
 
-2. **Execute os testes:**
+### Como instalar
+
+```bash
+npm install
+```
+
+## Como Executar os Testes e Gerar o Relatório
+
+1. **Executar os testes:**
    ```bash
    npx cucumber-js
    ```
 
-## Relatórios de Execução
+2. **Gerar e visualizar o relatório HTML:**
+   - Após a execução, o relatório estará disponível em:
+     ```
+     reports/cucumber-report.html
+     ```
+   - Abra esse arquivo em seu navegador para visualizar os resultados dos testes.
 
-Após rodar os testes, será gerado automaticamente um relatório HTML em:
+---
 
-```
-reports/cucumber-report.html
-```
+##Observações##
 
-Para visualizar o relatório, basta abrir esse arquivo em seu navegador.
+   - Os cenários de teste estão em tests/features.
+   ```
+   - Os passos dos testes estão em tests/steps.
+   ```
+   - O relatório HTML é gerado automaticamente e pode ser acessado em reports/cucumber-report.html.
 
-## Onde Rodar
-
-- O projeto pode ser executado em qualquer ambiente com Node.js instalado (Windows, Linux, Mac).
-- Recomenda-se rodar via terminal na raiz do projeto.
-
-## Observações
-
-- Os cenários de teste estão em `tests/features`.
-- Os passos dos testes estão em `tests/steps`.
-- O relatório HTML é gerado automaticamente e pode ser acessado em `reports/cucumber-report.html`.
-
+---
