@@ -14,21 +14,20 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v4
 
-      - name: Instalar Node.js
+      - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Instalar dependências
+      - name: Instalar dependências do projeto
         run: npm install
 
       - name: Instalar browsers do Playwright
         run: npx playwright install
 
-      - name: Executar testes Cucumber
+      - name: Executar testes automatizados
         run: npx cucumber-js
 
-     
       - name: Salvar relatórios como artefatos
         uses: actions/upload-artifact@v4
         with:
