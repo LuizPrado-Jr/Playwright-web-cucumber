@@ -1,11 +1,11 @@
 Feature: Login
 
-    Scenario: Valid Login
+    Scenario Outline: Tentativa de login sucesso e falha
         Given Eu estou na pagina de login
-        When Eu digito meu "luiz@teste.com" e "teste"
-        Then eu faco o login com sucesso
+        When Eu digito meu "<email>" e "<senha>"
+        Then <resultado>
 
-    Scenario: Login Invalido
-        Given Eu estou na pagina de login
-        When Eu digito meu "luizinvalidologin@teste.com" e "teste"
-        Then eu recebo uma mensagem de erro
+    Examples:
+      | email                        | senha  | resultado                       |
+      | luiz@teste.com               | teste  | eu faco o login com sucesso     |
+      | luizinvalidologin@teste.com  | teste  | eu recebo uma mensagem de erro  |
