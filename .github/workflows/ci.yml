@@ -22,8 +22,8 @@ jobs:
       - name: Instalar dependências do projeto
         run: npm install
 
-      - name: Instalar browsers do Playwright
-        run: ./node_modules/.bin/playwright install
+      - name: Fix Playwright Permissions
+        run: chmod +x ./node_modules/.bin/playwright
        
       - name: Executar testes automatizados
         run: npx cucumber-js
