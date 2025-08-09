@@ -24,8 +24,7 @@ jobs:
 
       - name: Instalar browsers do Playwright
         run: npx playwright install
-        shell: bash
-
+       
       - name: Executar testes automatizados
         run: npx cucumber-js
 
