@@ -1,7 +1,6 @@
 export const linkElements = {
   saucedemo: 'https://www.saucedemo.com',
   linkLogin: 'https://front.serverest.dev/login',
-
 };
 
 export const homeElements = {
@@ -18,7 +17,10 @@ export const checkoutElements = {
   postalCode: '[data-test="postalCode"]',
   continueButton: '[data-test="continue"]',
   finishButton: '[data-test="finish"]',
-  successMessage: '.complete-header'
+  successMessage: '.complete-header',
+  productName: '.inventory_item_name',
+  cartQuantity: '.cart_quantity',
+  totalValue: '.summary_total_label'
 };
 
 export const cartElements = {

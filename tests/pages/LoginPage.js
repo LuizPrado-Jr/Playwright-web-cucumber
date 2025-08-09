@@ -7,9 +7,10 @@ export class LoginPage {
     this.page = page;
     this.selectors = loginElements;
     this.selectors.linkLogin = linkElements.linkLogin;
-    
+    this.selectors.linkCadastro = linkElements.linkCadastro;
+   
   }
-
+  
   async LoginScreen() {
     await this.page.goto(this.selectors.linkLogin);
     }

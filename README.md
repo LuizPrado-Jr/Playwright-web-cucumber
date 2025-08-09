@@ -58,3 +58,19 @@ npm install
    - O relatório HTML é gerado automaticamente e pode ser acessado em reports/cucumber-report.html.
 
 ---
+
+**Ajustes solicitados**
+
+- Inclusão de validações de valores, quantidade e produto no checkout
+- Ajuste de page object ajustando os elementos mapeados em apenas um lugar
+- Ajuste do login.feature para reaproveitar passos repetidos com o uso do scenario outline para simplificar.
+- ajustado os steps criados 
+
+Com relação ao teste que está falhando, está ocorrendo, pois o site utilizado não sei por qual motivo "limpa" os cadastros. Sendo assim, peço por gentileza antes de utilizar realizar um cadastro manual no link:
+https://front.serverest.dev/cadastrarusuarios
+com os seguintes dados:
+usuraio = TesteLuiz
+email: luiz@teste.com
+senha: teste
+
+Dessa forma executa com sucesso. Realizei a automação para realizar sempre o cadastro antes, porém falhava os demais depois, pois já tinha usuário cadastrado.
