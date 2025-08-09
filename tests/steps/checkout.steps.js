@@ -1,7 +1,7 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { HomePage } = require('../pages/HomePage');
-const { CartPage } = require('../pages/CartPage');
-const { CheckoutPage } = require('../pages/CheckoutPage');
+const { HomePage } = require('../pages/homePage');
+const { CartPage } = require('../pages/cartPage');
+const { CheckoutPage } = require('../pages/checkoutPage');
 
 Given('que estou logado na loja', async function () {
   this.home = new HomePage(this.page);
