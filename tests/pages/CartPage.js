@@ -1,14 +1,15 @@
+import { cartElements } from '../support/elements.js';
 export class CartPage {
   constructor(page) {
     this.page = page;
-    this.checkoutButton = page.locator('[data-test="checkout"]');
+    this.selectors = cartElements;
   }
 
   async validateCart() {
-    await this.page.locator('.cart_item').waitFor({ state: 'visible' });
+    await this.page.locator(this.selectors.cartItem).waitFor({ state: 'visible' });
   }
 
   async proceedToCheckout() {
-    await this.checkoutButton.click();
+    await this.page.locator(this.selectors.checkoutButton).click();
   }
 }
