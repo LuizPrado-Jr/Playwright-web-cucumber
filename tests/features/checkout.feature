@@ -1,7 +1,5 @@
 Feature: Fluxo de compra em e-commerce
 
-  Feature: Fluxo de compra em e-commerce
-
   Scenario: Fluxo completo de compra com validações
     Given que estou logado na loja
     When adiciono um produto ao carrinho

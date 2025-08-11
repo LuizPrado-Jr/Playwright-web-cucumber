@@ -1,5 +1,5 @@
 const { Given, When, Then } = require('@cucumber/cucumber');
-const { LoginPage } = require('../pages/LoginPage');
+const { LoginPage } = require('../pages/loginPage');
 
 Given('Eu estou na pagina de login', async function () {
   this.login = new LoginPage(this.page);
